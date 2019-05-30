@@ -1,41 +1,20 @@
-import React, { Component } from 'react';
-import Search from '../../components/Search/Search';
+import React from 'react';
+import Home from '../../components/Home/Home';
+import { Route, Switch, Link, Redirect } from "react-router-dom";
+import About from '../../components/About/About';
 import './App.scss';
 
-class App extends Component {
-  constructor() {
-    super()
-    this.state = {
-      bikePaths: [],
-      error: ''
-    }
-  }
-
-
-  componentDidMount() {
-    const bikePathsURL = 'http://api.citybik.es/v2/networks';
-    fetch(bikePathsURL)
-      .then(response => response.json())
-      .then(results => this.setState({bikePaths: results.networks}))
-      .catch(err => this.setState({error: err}))
-  }
-
-
-
-  render() {
+const App = () => {
   return (
     <div className="App">
-      <header>
-        <h1>City-Cycle</h1>
-        <nav>
-          <h3>Favorites</h3>
-          <h3>About</h3>
-        </nav>
-      </header>
-      <Search/>
+      <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/About" component={About} />
+          {/* <Route path="/MapContainer" component={MapContainer} /> */}
+          <Redirect to="/" />
+      </Switch>
     </div>
   );
-  }
 }
 
 export default App;
