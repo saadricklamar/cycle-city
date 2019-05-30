@@ -2,37 +2,4 @@
   font-family: 'Righteous';
 }
 
-html {
-  text-align: center;
-  background: url(../../images/home-page.jpeg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 
-header {
-  display: flex;
-  justify-content: space-between;
-  color: white;
-  
-    h1 {
-      padding-left: 50px;
-      font-size: 4rem;
-      margin: 10px;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-around;
-    }
-
-    h3 {
-      margin: 20px 30px;
-      font-size: 2rem;
-      &:hover {
-        color: #30C3FA;
-        cursor: pointer;
-      }
-    }
-}

@@ -1,0 +1,22 @@
+p {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: #30C3FA;
+    &:hover {
+        color: white;
+    }
+}
+
+.return-home {
+    margin: 20px 20px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    &:hover {
+        color: #30C3FA;
+        cursor: pointer;
+    }
+}
