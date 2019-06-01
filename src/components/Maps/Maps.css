@@ -1,0 +1,9 @@
+.leaflet-container {
+    height: 500px;
+    width: 600px;
+    margin: 200px auto;
+    display: flex;
+    justify-content: center;
+    border: blue;
+  }
+
