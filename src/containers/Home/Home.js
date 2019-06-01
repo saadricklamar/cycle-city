@@ -27,6 +27,7 @@ class Home extends Component {
   
     render() {
     const { bikePaths } = this.props
+    console.log(bikePaths);
     return (
       <div className="home">
         <header>
