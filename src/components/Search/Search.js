@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
 import './Search.scss';
+import Maps from '../Maps';
 
 class Search extends Component {
     constructor(props) {
         super(props) 
         this.state = {
-            city: ''
+            city: '',
+            path: []
         }
     }
 
@@ -13,7 +15,9 @@ class Search extends Component {
 
     handleSubmit = (e) => {
         e.preventDefault();
-        console.log(this.state.city)
+        const { bikePaths } = this.props;
+        const pathChosen = bikePaths.filter(path => path.location.city === this.state.city);
+        this.setState({path: pathChosen})
     }
 
     handleChange = (e) => {
@@ -23,20 +27,23 @@ class Search extends Component {
 
 
     render() {
-        console.log(this.state.city)
-        console.log(this.props.bikePaths)
-        return (
-        <div>
-            <form onSubmit={this.handleSubmit} className='search-box'>
-            <input onChange={this.handleChange} className='search-text' type='text' name='city' placeholder='Find your city'/>
-            <button  className='search-btn'>
-            {/* <a className='search-btn'> */}
-             <i className="fas fa-search"></i>  
-            {/* </a> */}
-            </button>
-            </form>
-        </div>
-        )
+        if(!this.state.path.length) {
+            return (
+                <div>
+                    <form onSubmit={this.handleSubmit} className='search-box'>
+                    <input onChange={this.handleChange} className='search-text' type='text' name='city' placeholder='Find your city'/>
+                    <button  className='search-btn'>
+                    {/* <a className='search-btn'> */}
+                     <i className="fas fa-search"></i>  
+                    {/* </a> */}
+                    </button>
+                    </form>
+                </div>
+                )
+        } else {
+            return (<Maps/>)
+        }
+        
     }
 }
 
