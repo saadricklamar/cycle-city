@@ -16,10 +16,10 @@ describe('Home', () => {
         name: "Healthy Ride"
         }
     ]
-    // beforeEach(() => {
-    //     wrapper = shallow(<Home/>);
-    // });
-    it.skip('should match the snapshot', () => {
+    beforeEach(() => {
+        wrapper = shallow(<Home/>);
+    });
+    it('should match the snapshot', () => {
         expect(wrapper).toMatchSnapshot();
     });
     describe('mapStateToProps', () => {
@@ -32,6 +32,7 @@ describe('Home', () => {
             }
             const mappedProps = mapStateToProps(mockState);
             expect(mappedProps).toEqual(expected);
-        })  
-    })
+        });
+    });
+    
 })

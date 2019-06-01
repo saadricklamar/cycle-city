@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 import { addBikePaths } from '../../actions';
 
 
-class Home extends Component {
+export class Home extends Component {
     constructor() {
       super()
       this.state = {
@@ -57,3 +57,5 @@ export const mapDispatchToProps = dispatch => ({
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);
+
+
