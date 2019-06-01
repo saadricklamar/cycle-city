@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import Search from '../../components/Search/Search';
 import './Home.scss';
 import { Route, Switch, Link, Redirect } from "react-router-dom";
+import { connect } from 'react-redux';
+import { addBikePaths } from '../../actions';
+
 
 class Home extends Component {
     constructor() {
       super()
       this.state = {
-        bikePaths: [],
         error: ''
       }
     }
@@ -17,13 +19,14 @@ class Home extends Component {
       const bikePathsURL = 'http://api.citybik.es/v2/networks';
       fetch(bikePathsURL)
         .then(response => response.json())
-        .then(results => this.setState({bikePaths: results.networks}))
+        .then(results => this.props.addPath(results.networks))
         .catch(err => this.setState({error: err}))
     }
   
   
   
     render() {
+      console.log(this.state.bikePaths)
     return (
       <div className="home">
         <header>
@@ -37,10 +40,15 @@ class Home extends Component {
             </Link>
           </nav>
         </header>
-        <Search/>
+        <Search cities={this.state.bikePaths}/>
       </div>
     );
     }
   }
 
-  export default Home;
+
+export const mapDispatchToProps = dispatch => ({
+  addPath: obj => dispatch(addBikePaths(obj))
+})
+
+export default connect(null, mapDispatchToProps)(Home)
