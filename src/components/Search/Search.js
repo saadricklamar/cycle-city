@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './Search.scss';
 import Maps from '../Maps/Maps';
+import { Redirect } from "react-router-dom";
 
 class Search extends Component {
     constructor(props) {
@@ -25,23 +26,27 @@ class Search extends Component {
         this.setState({[name]: value})
     }
 
+    returnToHomePage = () => {
+        return <Redirect to="/"/>;
+    }
+
 
     render() {
         if(!Object.entries(this.state.path).length) {
             return (
                 <div>
                     <form onSubmit={this.handleSubmit} className='search-box'>
-                    <input onChange={this.handleChange} className='search-text' type='text' name='city' placeholder='Find your city'/>
-                    <button  className='search-btn'>
-                    {/* <a className='search-btn'> */}
-                     <i className="fas fa-search"></i>  
-                    {/* </a> */}
-                    </button>
+                        <input onChange={this.handleChange} className='search-text' type='text' name='city' placeholder='Find your city'/>
+                        <button  className='search-btn'>
+                            <i className="fas fa-search"></i>  
+                        </button>
                     </form>
                 </div>
                 )
         } else {
-            return (<Maps path={this.state.path}/>)
+            return (<Maps path={this.state.path}
+                          redirect={this.returnToHomePage}
+            />)
         }
         
     }
