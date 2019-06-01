@@ -4,6 +4,7 @@ import './Home.scss';
 import { Link } from "react-router-dom";
 import { connect } from 'react-redux';
 import { addBikePaths } from '../../actions';
+import { cleanBikePaths } from '../../util/cleanBikePaths';
 
 
 export class Home extends Component {
@@ -19,7 +20,8 @@ export class Home extends Component {
       const bikePathsURL = 'http://api.citybik.es/v2/networks';
       fetch(bikePathsURL)
         .then(response => response.json())
-        .then(results => this.props.addPath(results.networks.filter(network => network.location.country === 'US')))
+        .then(results => cleanBikePaths(results))
+        .then(bikePaths => this.props.addPath(bikePaths.filter(network => network.location.country === 'US')))
         .catch(err => this.setState({error: err}))
     }
   
