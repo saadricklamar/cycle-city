@@ -6,7 +6,7 @@ const About = () => {
     return (
         <div className='about'>
             <header>
-                <h1>About Cycle-City</h1>
+                <h1 className='About'>About Cycle-City</h1>
                 <Link className='return-home' to="/">
                     Return Home
                 </Link>

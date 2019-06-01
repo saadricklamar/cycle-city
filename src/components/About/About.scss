@@ -10,6 +10,9 @@ a {
     }
 }
 
+.About {
+    color: #30C3FA;
+}
 .return-home {
     margin: 20px 20px;
     font-size: 2rem;
@@ -20,3 +23,14 @@ a {
         cursor: pointer;
     }
 }
+
+.about {
+    text-align: center;
+    background: url(../../images/about-page.jpeg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover; 
+    background-size: cover;
+    height: 100vh;
+}
+
