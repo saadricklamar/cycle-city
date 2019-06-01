@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
-import bikePathReducer from './bikePathReducer';
+import { bikePaths } from './bikePaths';
 
 
 const rootReducer = combineReducers({
-    bikePathReducer
+    bikePaths: bikePaths
 })
 
 export default rootReducer;
