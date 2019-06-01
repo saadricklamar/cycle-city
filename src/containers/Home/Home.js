@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Search from '../../components/Search/Search';
 import './Home.scss';
-import { Route, Switch, Link, Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { connect } from 'react-redux';
 import { addBikePaths } from '../../actions';
 
@@ -56,4 +56,4 @@ export const mapDispatchToProps = dispatch => ({
   addPath: obj => dispatch(addBikePaths(obj))
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(Home)
+export default connect(mapStateToProps, mapDispatchToProps)(Home);
