@@ -34,5 +34,14 @@ describe('Home', () => {
             expect(mappedProps).toEqual(expected);
         });
     });
+    describe('mapDispatchToProps', () => {
+        it('calls dispatch with an addPath action when mounting', () => {
+            const mockDispatch = jest.fn();
+            const actionToDispatch = addBikePaths(bikePaths);
+            const mappedProps = mapDispatchToProps(mockDispatch);
+            mappedProps.addPath(bikePaths);
+            expect(mockDispatch).toHaveBeenCalledWith(actionToDispatch);
+        });
+    });
     
 })
