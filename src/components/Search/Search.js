@@ -5,36 +5,36 @@ class Search extends Component {
     constructor(props) {
         super(props) 
         this.state = {
-
+            city: ''
         }
     }
 
 
 
-    submit = (e) => {
-     console.log(e.target)
+    handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(this.state.city)
     }
 
-    change = (e) => {
-        console.log(e.target.value)
+    handleChange = (e) => {
+        const { name, value} = e.target;
+        this.setState({[name]: value})
     }
-
-
-
-
 
 
     render() {
+        console.log(this.state.city)
+        console.log(this.props.bikePaths)
         return (
         <div>
-            <div className='search-box'>
-            <input onChange={this.change} className='search-text' type='text' name='' placeholder='Find your city'/>
-            <button onClick={this.submit} className='search-btn'>
+            <form onSubmit={this.handleSubmit} className='search-box'>
+            <input onChange={this.handleChange} className='search-text' type='text' name='city' placeholder='Find your city'/>
+            <button  className='search-btn'>
             {/* <a className='search-btn'> */}
              <i className="fas fa-search"></i>  
             {/* </a> */}
             </button>
-            </div>
+            </form>
         </div>
         )
     }

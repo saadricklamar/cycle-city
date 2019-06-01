@@ -19,14 +19,14 @@ class Home extends Component {
       const bikePathsURL = 'http://api.citybik.es/v2/networks';
       fetch(bikePathsURL)
         .then(response => response.json())
-        .then(results => this.props.addPath(results.networks))
+        .then(results => this.props.addPath(results.networks.filter(network => network.location.country === 'US')))
         .catch(err => this.setState({error: err}))
     }
   
   
   
     render() {
-      console.log(this.state.bikePaths)
+    const { bikePaths } = this.props
     return (
       <div className="home">
         <header>
@@ -40,15 +40,19 @@ class Home extends Component {
             </Link>
           </nav>
         </header>
-        <Search cities={this.state.bikePaths}/>
+        <Search bikePaths={bikePaths}/>
       </div>
     );
     }
   }
 
 
+export const mapStateToProps = (state) => ({
+  bikePaths: state.bikePaths
+})
+
 export const mapDispatchToProps = dispatch => ({
   addPath: obj => dispatch(addBikePaths(obj))
 })
 
-export default connect(null, mapDispatchToProps)(Home)
+export default connect(mapStateToProps, mapDispatchToProps)(Home)
