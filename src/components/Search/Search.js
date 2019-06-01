@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 import './Search.scss';
-import Maps from '../Maps';
+import Maps from '../Maps/Maps';
 
 class Search extends Component {
     constructor(props) {
         super(props) 
         this.state = {
             city: '',
-            path: []
+            path: {}
         }
     }
 
@@ -17,7 +17,7 @@ class Search extends Component {
         e.preventDefault();
         const { bikePaths } = this.props;
         const pathChosen = bikePaths.filter(path => path.location.city === this.state.city);
-        this.setState({path: pathChosen})
+        this.setState({path: pathChosen.pop()})
     }
 
     handleChange = (e) => {
@@ -27,7 +27,7 @@ class Search extends Component {
 
 
     render() {
-        if(!this.state.path.length) {
+        if(!Object.entries(this.state.path).length) {
             return (
                 <div>
                     <form onSubmit={this.handleSubmit} className='search-box'>
@@ -41,7 +41,7 @@ class Search extends Component {
                 </div>
                 )
         } else {
-            return (<Maps/>)
+            return (<Maps path={this.state.path}/>)
         }
         
     }
