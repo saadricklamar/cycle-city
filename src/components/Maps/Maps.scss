@@ -7,11 +7,28 @@
     border: 1px solid #30C3FA;
   }
 
+.go-home {
+  font-size: 50px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 30px;
+  left: 10px;
+
+  .fa-arrow-circle-left {
+    color: white;
+    &:hover {
+      color: #30C3FA;
+    }
+  }
+}
+
 .map-container {
   display: inline-block;
 
   .map-header {
-    height: 100px;
+    height: 70px;
     width: 602px;
     background-color:#30C3FA;
     margin-top: 200px;

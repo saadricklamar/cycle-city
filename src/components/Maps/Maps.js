@@ -1,6 +1,6 @@
 import React from 'react';
 import './Maps.scss';
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import { Map, TileLayer, Marker, Popup} from 'react-leaflet';
 
 const Maps = (props) => {
@@ -9,14 +9,13 @@ const Maps = (props) => {
     let mapCenter = [props.path.location.latitude, props.path.location.longitude];
     let position = [props.path.location.latitude, props.path.location.longitude];
     const zoomLevel = 8;
-    console.log(props.path)
     return (
         <div className='Maps'>
-                {/* <Link className='return-home' to="/">
-                    <button>
-                        <i className="fas fa-arrow-circle-left"></i>
+                <Link to="/">
+                    <button className='go-home'>
+                        <i onClick={props.redirect()} className="fas fa-arrow-circle-left"></i>
                     </button>
-                </Link> */}
+                </Link>
             <section className='map-container'>
                 <div className='map-header'>
                     <h2>{props.path.name}</h2>
