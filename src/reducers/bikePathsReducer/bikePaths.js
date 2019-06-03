@@ -9,5 +9,4 @@ export const bikePaths = (state = [], action) => {
     }
 }
 
-
 export default bikePaths;

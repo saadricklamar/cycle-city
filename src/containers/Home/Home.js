@@ -3,7 +3,7 @@ import Search from '../../components/Search/Search';
 import './Home.scss';
 import { Link } from "react-router-dom";
 import { connect } from 'react-redux';
-import { addBikePaths } from '../../actions';
+import { addBikePaths, hasErrored, isLoading } from '../../actions';
 import { cleanBikePaths } from '../../util/cleanBikePaths';
 
 
@@ -51,11 +51,15 @@ export class Home extends Component {
 
 
 export const mapStateToProps = (state) => ({
-  bikePaths: state.bikePaths
+  bikePaths: state.bikePaths,
+  hasErrored: state.hasErrored,
+  isLoading: state.isLoading
 })
 
 export const mapDispatchToProps = dispatch => ({
-  addPath: obj => dispatch(addBikePaths(obj))
+  addPath: obj => dispatch(addBikePaths(obj)),
+  hasErrored: bool =>  dispatch(hasErrored(bool)),
+  isLoading: bool => dispatch(isLoading(bool))
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(Home);

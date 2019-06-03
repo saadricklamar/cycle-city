@@ -41,7 +41,7 @@ class Search extends Component {
                                 className='search-text' 
                                 type='text' 
                                 name='city' 
-                                placeholder='Find your city'
+                                placeholder='Find your city...'
                             />
                             <button  className='search-btn'>
                                 <i className="fas fa-search"></i>  
