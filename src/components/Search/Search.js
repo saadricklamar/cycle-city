@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import './Search.scss';
 import Maps from '../Maps/Maps';
 import { Redirect } from "react-router-dom";
+import { toggleFavorite } from '../../actions';
+import { connect } from 'react-redux';
 
 class Search extends Component {
     constructor(props) {
@@ -25,13 +27,17 @@ class Search extends Component {
         }
     }
 
-    handleChange = (e) => {
+    handleChange = e => {
         const { name, value} = e.target;
         this.setState({[name]: value})
     }
 
     returnToHomePage = () => {
         return <Redirect to="/"/>;
+    }
+
+    toggleFavorite = (id) => {
+        this.props.toggleFavorite(id);
     }
 
 
@@ -66,6 +72,7 @@ class Search extends Component {
         } else {
             return (<Maps path={this.state.path}
                           redirect={this.returnToHomePage}
+                          toggleFavorite={this.toggleFavorite}
             />)
         }
         
@@ -73,5 +80,9 @@ class Search extends Component {
 }
 
 
+export const mapDispatchToProps = dispatch => ({
+    toggleFavorite: id => dispatch(toggleFavorite(id))
+  })
 
-export default Search;
+
+  export default connect(null, mapDispatchToProps)(Search);

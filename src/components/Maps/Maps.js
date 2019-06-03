@@ -19,7 +19,7 @@ const Maps = (props) => {
             <section className='map-container'>
                 <div className='map-header'>
                     <h2>{props.path.name}</h2>
-                    <i title='Favorite this Bike Path' className="fas fa-bicycle"></i>
+                    <i onClick={() => props.toggleFavorite(props.path.id)} title='Favorite this Bike Path' className="fas fa-bicycle"></i>
                 </div>
             <Map center={mapCenter}
                  zoom={zoomLevel}>
