@@ -6,7 +6,7 @@ describe('bikePaths', () => {
         const expected = [];
         const result = bikePaths(undefined, {});
         expect(result).toEqual(expected);
-    })
+    });
     it('should return state with bike paths', () => {
         const expected = [
             {
@@ -27,5 +27,5 @@ describe('bikePaths', () => {
             }
         ]))
         expect(result).toEqual(expected);
-    })
+    });
 });
