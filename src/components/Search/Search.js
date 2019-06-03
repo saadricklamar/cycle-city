@@ -8,7 +8,7 @@ class Search extends Component {
         super(props) 
         this.state = {
             city: '',
-            path: {}
+            path: {} || ''
         }
     }
 
@@ -18,7 +18,11 @@ class Search extends Component {
         e.preventDefault();
         const { bikePaths } = this.props;
         const pathChosen = bikePaths.filter(path => path.location.city === this.state.city);
-        this.setState({path: pathChosen.pop()})
+        if(!pathChosen.length) {
+            this.setState({path: 'Your city was not found'})
+        } else {
+            this.setState({path: pathChosen.pop()})
+        }
     }
 
     handleChange = (e) => {
@@ -32,15 +36,31 @@ class Search extends Component {
 
 
     render() {
-        if(!Object.entries(this.state.path).length) {
+        let search =  <form onSubmit={this.handleSubmit} className='search-box'>
+                            <input onChange={this.handleChange} 
+                                className='search-text' 
+                                type='text' 
+                                name='city' 
+                                placeholder='Find your city'
+                            />
+                            <button  className='search-btn'>
+                                <i className="fas fa-search"></i>  
+                            </button>
+                        </form>            
+        let notFound;
+        if (typeof this.state.path === 'string') {
+            notFound = <p className='not-found'>{this.state.path}</p>
             return (
                 <div>
-                    <form onSubmit={this.handleSubmit} className='search-box'>
-                        <input onChange={this.handleChange} className='search-text' type='text' name='city' placeholder='Find your city'/>
-                        <button  className='search-btn'>
-                            <i className="fas fa-search"></i>  
-                        </button>
-                    </form>
+                    {search}
+                    {notFound}
+                </div>
+                )
+        }
+        if (!Object.entries(this.state.path).length) {
+            return (
+                <div>
+                    {search}
                 </div>
                 )
         } else {
@@ -51,6 +71,7 @@ class Search extends Component {
         
     }
 }
+
 
 
 export default Search;
