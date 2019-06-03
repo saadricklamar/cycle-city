@@ -5,6 +5,8 @@
     display: flex;
     justify-content: center;
     border: 1px solid #30C3FA;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
   }
 
 .go-home {
@@ -34,6 +36,8 @@
     margin-top: 200px;
     display: flex;
     justify-content: flex-start;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 
     h2 {
       text-align: left;
