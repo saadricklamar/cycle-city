@@ -1,6 +1,6 @@
 import React from 'react';
 import './Maps.scss';
-import { Link, Redirect } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Map, TileLayer, Marker, Popup} from 'react-leaflet';
 
 const Maps = (props) => {
