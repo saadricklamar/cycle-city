@@ -5,7 +5,7 @@ export const bikePaths = (state = [], action) => {
         case 'TOGGLE_FAVORITE':
             return  state.filter(path => {
                 if(path.id === action.id) {
-                    path.favorited = true;
+                   return path.favorited = true;
                 }
             })
         default:
