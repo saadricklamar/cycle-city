@@ -3,7 +3,7 @@ import Search from '../../components/Search/Search';
 import './Home.scss';
 import { Link } from "react-router-dom";
 import { connect } from 'react-redux';
-import { addBikePaths, hasErrored, isLoading } from '../../actions';
+import { addBikePaths, toggleFavorite, hasErrored, isLoading } from '../../actions';
 import { cleanBikePaths } from '../../util/cleanBikePaths';
 
 
@@ -58,6 +58,7 @@ export const mapStateToProps = (state) => ({
 
 export const mapDispatchToProps = dispatch => ({
   addPath: obj => dispatch(addBikePaths(obj)),
+  toggleFavorite: id => dispatch(toggleFavorite(id)),
   hasErrored: bool =>  dispatch(hasErrored(bool)),
   isLoading: bool => dispatch(isLoading(bool))
 })
