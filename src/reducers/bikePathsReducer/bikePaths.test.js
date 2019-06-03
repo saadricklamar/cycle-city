@@ -1,5 +1,5 @@
 import { bikePaths } from './bikePaths';
-import * as actions from '../actions/';
+import * as actions from '../../actions';
 
 describe('bikePaths', () => {
     it('should return the initial state', () => {
