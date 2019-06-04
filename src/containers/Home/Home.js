@@ -15,15 +15,18 @@ export class Home extends Component {
         error: ''
       }
     }
-  
-  
-    componentDidMount() {
-      const bikePathsURL = 'http://api.citybik.es/v2/networks';
-      fetch(bikePathsURL)
-        .then(response => response.json())
-        .then(results => cleanBikePaths(results))
-        .then(bikePaths => this.props.addPath(bikePaths.filter(network => network.location.country === 'US')))
-        .catch(error => this.setState({error: error.message}))
+
+    async componentDidMount() {
+      try {
+        const response = await fetch('http://api.citybik.es/v2/networks')
+        if (response.ok) {
+          const bikePaths = await response.json();
+          const cleanData = cleanBikePaths(bikePaths)
+          this.props.addPath(cleanData.filter(network => network.location.country === 'US'))
+        } else throw Error('Failed to get bikepaths');
+      } catch(error) {
+        this.setState({error})
+      }
     }
   
   
