@@ -1,38 +1,36 @@
 .favorites-container {
-    text-align: center;
-    background: url(../../images/about-page.jpeg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover; 
-    background-size: cover;
-    height: 100vh;
+  text-align: center;
+  background: url(../../images/about-page.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
 
-    .return-home {
-        margin: 20px 20px;
-        font-size: 2rem;
-        text-decoration: none;
-        color: black;
-        &:hover {
-            color: #30C3FA;
-            cursor: pointer;
-        }
+  .return-home {
+    margin: 20px 20px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    &:hover {
+      color: #30c3fa;
+      cursor: pointer;
     }
-    .favorites-main {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-        margin: 50px;
-    }
-    
-    .favorites {
-        color: #30C3FA;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: black;
-    }
-    
-    p {
-        color: black;
-    }
+  }
+  .favorites-main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 50px;
+  }
 
+  .favorites {
+    color: #30c3fa;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+
+  p {
+    color: black;
+  }
 }
-

@@ -1,56 +1,60 @@
 .home {
-    text-align: center;
-    background: url(../../images/home-page.jpeg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover; 
-    background-size: cover;
-    height: 100vh;
+  text-align: center;
+  background: url(../../images/home-page.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
 }
 
 header {
-    display: flex;
-    justify-content: space-between;
-    color: white;
-    
-      h1 {
-        padding-left: 70px;
-        font-size: 4rem;
-        margin: 20px;
-      }
-  
-      nav {
-        display: flex;
-        justify-content: space-around;
-      }
-  
-      .favorite-link,
-      .about-link {
-        margin: 20px 20px;
-        font-size: 2rem;
-        text-decoration: none;
-        color: white;
-        &:hover {
-          color: black;
-          cursor: pointer;
-        }
-      }
+  display: flex;
+  justify-content: space-between;
+  color: white;
+
+  h1 {
+    padding-left: 70px;
+    font-size: 4rem;
+    margin: 20px;
   }
 
-  .loader {
-    margin: 400px auto;
-    border: 16px solid #f3f3f3; 
-    border-top: 16px solid #3498db;
-    border-radius: 50%;
-    width: 120px;
-    height: 120px;
-    animation: spin 2s linear infinite;
+  nav {
+    display: flex;
+    justify-content: space-around;
   }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+
+  .favorite-link,
+  .about-link {
+    margin: 20px 20px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    &:hover {
+      color: black;
+      cursor: pointer;
+    }
   }
+}
+
+.loader {
+  margin: 400px auto;
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #3498db;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 
 h3 {
   padding-top: 300px;

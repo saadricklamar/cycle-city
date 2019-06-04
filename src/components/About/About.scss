@@ -1,52 +1,43 @@
 .about {
-    text-align: center;
-    background: url(../../images/about-page.jpeg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover; 
-    background-size: cover;
-    height: 100vh;
+  text-align: center;
+  background: url(../../images/about-page.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
 
-    .about-header,
-    .return-home {
-        color: #30C3FA;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: black;
+  .about-header,
+  .return-home {
+    color: #30c3fa;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+  }
+
+  .return-home {
+    margin: 20px 20px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: black;
+    &:hover {
+      color: #30c3fa;
+      cursor: pointer;
     }
+  }
 
-    .return-home {
-        margin: 20px 20px;
-        font-size: 2rem;
-        text-decoration: none;
-        color: black;
-        &:hover {
-            color: #30C3FA;
-            cursor: pointer;
-        }
+  .about-main {
+    margin-top: 100px;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+
+  a {
+    text-decoration: none;
+    color: #30c3fa;
+    &:hover {
+      color: white;
     }
-
-    .about-main {
-        margin-top: 100px;
-    }
-
-    p {
-        font-size: 2rem;
-    }  
-    
-    a {
-        text-decoration: none;
-        color: #30C3FA;
-        &:hover {
-        color: white;
-        }
-    } 
+  }
 }
-
-
-
-
-
-
-
-
-
