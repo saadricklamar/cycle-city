@@ -10,6 +10,7 @@ import cleanBikePaths from '../../util/cleanBikePaths';
 
 describe('Home', () => {
     let wrapper;
+    let spyOn;
     let mockAddPath = jest.fn();
     let mockBikePaths = [
         {
@@ -34,7 +35,6 @@ describe('Home', () => {
                 json: () => Promise.resolve(mockBikePaths)
               }))
             const expected = 'http://api.citybik.es/v2/networks';
-            wrapper = shallow(<Home/>)
             expect(window.fetch).toHaveBeenCalledWith(expected)
           })
         
