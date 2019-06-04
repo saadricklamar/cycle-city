@@ -17,12 +17,19 @@
             cursor: pointer;
         }
     }
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 50px;
+    }
+    
+    .favorites {
+        color: #30C3FA;
+    }
+    
+    p {
+        color: black;
+    }
+
 }
 
-.favorites {
-    color: #30C3FA;
-}
-
-p {
-    color: black;
-}
