@@ -1,68 +1,64 @@
 .search-box {
-    position: absolute;
-    top: 45%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: #30C3FA;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #30c3fa;
+  height: 40px;
+  border-radius: 40px;
+  padding: 10px;
+  cursor: pointer;
+  &:hover > .search-text {
+    width: 240px;
+    padding: 0 6px;
+  }
+  &:hover > .search-btn {
+    background: #4e6067;
+  }
+
+  .search-btn {
+    color: white;
+    float: right;
+    width: 40px;
     height: 40px;
-    border-radius: 40px;
-    padding: 10px;
+    border-radius: 50%;
+    border: none;
+    background: #4e6067;
+    background: #30c3fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
     cursor: pointer;
-    &:hover > .search-text {
-        width: 240px;
-        padding: 0 6px;
+    i {
+      font-size: 20px;
     }
-    &:hover > .search-btn {
-       background: #4E6067;
-    }
+  }
 
-    .search-btn {
-        color: white;
-        float: right;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        border: none;
-        background: #4E6067;
-        background: #30C3FA;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        transition: 0.4s;
-        cursor: pointer;
-        i {
-            font-size: 20px;
-        }
+  .search-text {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 1.5rem;
+    transition: 0.4s;
+    line-height: 40px;
+    width: 220px;
+    cursor: pointer;
+    &::placeholder {
+      color: white;
+      padding-left: 10px;
     }
-
-    .search-text {
-        border: none;
-        background: none;
-        outline: none;
-        float: left;
-        padding: 0;
-        color: white;
-        font-size: 1.5rem;
-        transition: 0.4s;
-        line-height: 40px;
-        width: 220px;
-        cursor: pointer;
-        &::placeholder {
-            color: white;
-            padding-left: 10px;
-        }
-    }
-    
+  }
 }
 
 p {
-    display: inline-block
+  display: inline-block;
 }
-
 
 .not-found {
-    margin-top: 370px;
-    font-size: 1.3rem;
+  margin-top: 370px;
+  font-size: 1.3rem;
 }
-
-

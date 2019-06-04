@@ -1,13 +1,13 @@
 .leaflet-container {
-    height: 500px;
-    width: 600px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    border: 1px solid #30C3FA;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-  }
+  height: 500px;
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #30c3fa;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
 
 .go-home {
   font-size: 50px;
@@ -32,7 +32,7 @@
   .map-header {
     height: 70px;
     width: 602px;
-    background-color:#30C3FA;
+    background-color: #30c3fa;
     margin-top: 200px;
     display: flex;
     justify-content: flex-start;
@@ -56,10 +56,8 @@
         cursor: pointer;
       }
     }
-
-    
   }
-  
+
   .pop-up {
     font-size: 1.5rem;
     margin: 0 auto;
@@ -68,7 +66,7 @@
     h6 {
       margin: 0 auto;
       padding: 0 auto;
-      color: #30C3FA;
+      color: #30c3fa;
       font-size: 1.5rem;
     }
 
@@ -78,9 +76,9 @@
     }
 
     .website {
-      color: black; 
+      color: black;
       &:hover {
-        color: #30C3FA;
+        color: #30c3fa;
       }
     }
   }
