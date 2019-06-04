@@ -29,8 +29,11 @@ export class Home extends Component {
   
   
     render() {
-    const { bikePaths } = this.props
+    const { bikePaths, isLoading, hasErrored } = this.props
     console.log(bikePaths)
+    if (isLoading && !bikePaths.length) {
+      return(<div class="loader"></div>)
+    } else {
     return (
       <div className="home">
         <header>
@@ -47,6 +50,7 @@ export class Home extends Component {
         <Search bikePaths={bikePaths}/>
       </div>
     );
+    }
     }
   }
 
