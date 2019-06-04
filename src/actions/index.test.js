@@ -30,12 +30,12 @@ describe('actions', () => {
         expect(result).toEqual(expectedAction)
     });
     it('should have a type of HAS_ERRORED', () => {
-        const bool = false
+        const string = 'error'
         const expectedAction = {
             type: 'HAS_ERRORED',
-            bool
+            string
         }
-        const result = actions.hasErrored(bool);
+        const result = actions.hasErrored(string);
         expect(result).toEqual(expectedAction)
     });
 })

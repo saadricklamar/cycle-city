@@ -35,7 +35,7 @@ export class Favorites extends Component {
                     Return Home
                 </Link>
             </header>
-            <main>
+            <main className='favorites-main'>
                 {displayFavorites}
             </main>
         </div>
