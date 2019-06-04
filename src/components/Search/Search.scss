@@ -45,7 +45,7 @@
         font-size: 1.5rem;
         transition: 0.4s;
         line-height: 40px;
-        width: 0;
+        width: 220px;
         cursor: pointer;
         &::placeholder {
             color: white;
@@ -62,6 +62,7 @@ p {
 
 .not-found {
     margin-top: 370px;
+    font-size: 1.3rem;
 }
 
 

@@ -3,11 +3,12 @@ export const bikePaths = (state = [], action) => {
         case 'ADD_BIKE_PATHS':
             return [...action.bikePaths]
         case 'TOGGLE_FAVORITE':
-            return  state.filter(path => {
+            state.filter(path => {
                 if(path.id === action.id) {
                    return path.favorited = true;
                 }
             })
+            return [...state]
         default:
             return state;
     }

@@ -3,6 +3,7 @@ import Maps from './Maps';
 import { shallow } from 'enzyme';
 
 describe('Maps', () => {
+    let wrapper;
     const mockPath=  {
         company: ["Nextbike GmbH"],
         href: "/v2/networks/healthy-ride-pittsburgh-pittsburgh",
@@ -12,10 +13,12 @@ describe('Maps', () => {
         };
     const mockRedirect = jest.fn();
     const mockToggleFavorite = jest.fn();
-    let wrapper = shallow(<Maps path={mockPath}
-                              redirect={mockRedirect}
-                              toggleFavorite={mockToggleFavorite}
-                        />);
+    beforeEach(() => {
+        wrapper = shallow(<Maps path={mockPath}
+            redirect={mockRedirect}
+            toggleFavorite={mockToggleFavorite}
+      />);
+    });
     it('should match the snapshot', () => {
         expect(wrapper).toMatchSnapshot();
     });

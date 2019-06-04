@@ -12,16 +12,6 @@ export class Favorites extends Component {
         }
     }
 
-    // fetch = async (url, options) => {
-    //     const response = await fetch(url, options)
-    //     const result = response.json()
-    //     if(!response.ok) {
-    //         throw Error('Error fetching data')
-    //     } else {
-    //         return result
-    //     }
-    // }
-
     render() {
     const { bikePaths } = this.props;
     const displayFavorites = bikePaths.filter(path => path.favorited === true).map(favorite => {

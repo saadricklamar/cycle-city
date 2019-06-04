@@ -17,6 +17,9 @@ export class Home extends Component {
     }
 
     async componentDidMount() {
+      if(this.props.bikePaths.length) {
+        return 
+      } else {
       try {
         const response = await fetch('http://api.citybik.es/v2/networks')
         if (response.ok) {
@@ -28,11 +31,13 @@ export class Home extends Component {
         this.setState({error})
       }
     }
+    }
   
   
   
     render() {
     const { bikePaths, isLoading } = this.props
+    console.log(bikePaths)
     if (this.state.error !== '') {
       return(<p>There was an error fetching the data. Please try refreshing your page.</p>)
     }
