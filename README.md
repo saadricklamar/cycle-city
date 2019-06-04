@@ -7,7 +7,7 @@ Traveling to a new city, but not sure if it's bike accessible? Cycle-City has bi
 
 * Implement Leaflet, a Javascript library for interactive maps
 * Implement React, Redux, and Router
-* Write meaningful, comprehensive unit and integration tests.
+* Write meaningful, comprehensive unit and integration tests for everything
 
 ## Installation and Setup Instructions
 
@@ -22,3 +22,10 @@ Traveling to a new city, but not sure if it's bike accessible? Cycle-City has bi
 
 ## Wireframe
 
+<img width="810" alt="WireFrameHomeCycleCity" src="https://user-images.githubusercontent.com/42000931/58891064-16b3fc00-86a9-11e9-9888-994bcf98e7d3.png">
+
+<img width="802" alt="MapsCycleCity" src="https://user-images.githubusercontent.com/42000931/58891070-19165600-86a9-11e9-90b3-ebab18f4efe2.png">
+
+## Contributors
+
+* Saad Baradan https://github.com/saadricklamar
