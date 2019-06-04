@@ -5,7 +5,7 @@ import { Redirect } from "react-router-dom";
 import { toggleFavorite } from '../../actions';
 import { connect } from 'react-redux';
 
-class Search extends Component {
+export class Search extends Component {
     constructor(props) {
         super(props) 
         this.state = {
@@ -85,4 +85,4 @@ export const mapDispatchToProps = dispatch => ({
   })
 
 
-  export default connect(null, mapDispatchToProps)(Search);
+export default connect(null, mapDispatchToProps)(Search);
