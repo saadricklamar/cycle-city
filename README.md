@@ -1,6 +1,6 @@
 # Cycle-City App
 
-Traveling to a new city, but not sure if it's bike accessible? Cycle-City has biking information on over 60 cities and provides users with a map of the city's bike program. If you're traveling or new to a city, then hop on Cycle-City and find your next biking adventure! 
+Traveling to a new city, but not sure if it's bike accessible? Cycle-City has biking information on over 60 cities and provides users with a map of the city's bike program. If you're traveling to a new city, then hop on Cycle-City and find your next biking adventure! 
 
 
 ## Project Goals
@@ -25,6 +25,14 @@ Traveling to a new city, but not sure if it's bike accessible? Cycle-City has bi
 <img width="810" alt="WireFrameHomeCycleCity" src="https://user-images.githubusercontent.com/42000931/58891064-16b3fc00-86a9-11e9-9888-994bcf98e7d3.png">
 
 <img width="802" alt="MapsCycleCity" src="https://user-images.githubusercontent.com/42000931/58891070-19165600-86a9-11e9-90b3-ebab18f4efe2.png">
+
+## Tech Stack
+
+* Leaflet
+* React
+* Redux
+* Jest/Enzyme
+* Sass
 
 ## Contributors
 
