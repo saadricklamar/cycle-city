@@ -36,7 +36,6 @@ export class Home extends Component {
 
   render() {
     const { bikePaths, isLoading } = this.props;
-    console.log(bikePaths);
     if (this.state.error !== "") {
       return (
         <p>
