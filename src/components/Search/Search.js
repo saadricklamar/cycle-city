@@ -81,7 +81,9 @@ export class Search extends Component {
 }
 
 Search.propTypes = {
-  toggleFavorite: PropTypes.func.isRequired
+  toggleFavorite: PropTypes.func,
+  city: PropTypes.string,
+  path: PropTypes.object || PropTypes.string
 }
 
 export const mapDispatchToProps = dispatch => ({
