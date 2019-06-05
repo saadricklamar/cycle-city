@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "./Favorites.scss";
 import { connect } from "react-redux";
 import Card from "../Card/Card";
+import { PropTypes } from "prop-types";
 
 export class Favorites extends Component {
   constructor() {
@@ -29,6 +30,10 @@ export class Favorites extends Component {
       </div>
     );
   }
+}
+
+Favorites.propTypes = {
+  bikePaths: PropTypes.array.isRequired
 }
 
 export const mapStateToProps = state => ({
