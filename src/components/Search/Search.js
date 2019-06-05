@@ -4,6 +4,7 @@ import Maps from "../Maps/Maps";
 import { Redirect } from "react-router-dom";
 import { toggleFavorite } from "../../actions";
 import { connect } from "react-redux";
+import { PropTypes } from "prop-types";
 
 export class Search extends Component {
   constructor(props) {
@@ -77,6 +78,10 @@ export class Search extends Component {
       );
     }
   }
+}
+
+Search.propTypes = {
+  toggleFavorite: PropTypes.func.isRequired
 }
 
 export const mapDispatchToProps = dispatch => ({

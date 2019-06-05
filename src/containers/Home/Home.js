@@ -5,6 +5,7 @@ import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { addBikePaths, hasErrored, isLoading } from "../../actions";
 import { cleanBikePaths } from "../../util/cleanBikePaths";
+import { PropTypes } from "prop-types";
 
 export class Home extends Component {
   constructor() {
@@ -64,6 +65,13 @@ export class Home extends Component {
       );
     }
   }
+}
+
+Home.propTypes = {
+  bikePaths: PropTypes.array.isRequired,
+  hasErrored: PropTypes.func.isRequired,
+  isLoading: PropTypes.func.isRequired,
+  error: PropTypes.string
 }
 
 export const mapStateToProps = state => ({

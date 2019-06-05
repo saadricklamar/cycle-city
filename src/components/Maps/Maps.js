@@ -2,8 +2,10 @@ import React from "react";
 import "./Maps.scss";
 import { Link } from "react-router-dom";
 import { Map, TileLayer, Marker, Popup } from "react-leaflet";
+import { PropTypes } from "prop-types";
 
 const Maps = props => {
+  console.log(props)
   const stamenTonerTiles =
     "http://stamen-tiles-{s}.a.ssl.fastly.net/toner-background/{z}/{x}/{y}.png";
   const stamenTonerAttr =
@@ -59,5 +61,9 @@ const Maps = props => {
     </div>
   );
 };
+
+Maps.propTypes = {
+  path: PropTypes.object.isRequired
+}
 
 export default Maps;
