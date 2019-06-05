@@ -16,7 +16,7 @@ const Maps = props => {
     <div className="Maps">
       <Link to="/">
         <button className="go-home">
-          <i onClick={() => props.redirect()} className="fas fa-arrow-circle-left" />
+          <i onClick={props.redirect()} className="fas fa-arrow-circle-left" />
         </button>
       </Link>
       <section className="map-container">
