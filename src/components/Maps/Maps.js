@@ -5,7 +5,6 @@ import { Map, TileLayer, Marker, Popup } from "react-leaflet";
 import { PropTypes } from "prop-types";
 
 const Maps = props => {
-  console.log(props)
   const stamenTonerTiles =
     "http://stamen-tiles-{s}.a.ssl.fastly.net/toner-background/{z}/{x}/{y}.png";
   const stamenTonerAttr =
@@ -17,7 +16,7 @@ const Maps = props => {
     <div className="Maps">
       <Link to="/">
         <button className="go-home">
-          <i onClick={props.redirect()} className="fas fa-arrow-circle-left" />
+          <i onClick={() => props.redirect()} className="fas fa-arrow-circle-left" />
         </button>
       </Link>
       <section className="map-container">
@@ -26,7 +25,7 @@ const Maps = props => {
           <i
             onClick={() => props.toggleFavorite(props.path.id)}
             title="Favorite this Bike Path"
-            className="fas fa-bicycle"
+            className={`fas fa-star ${props.favorite && "favorite"}`}
           />
         </div>
         <Map center={mapCenter} zoom={zoomLevel}>

@@ -48,15 +48,19 @@
       color: white;
     }
 
-    .fa-bicycle {
+    .fa-star {
       color: white;
       margin: 0 0 0 200px;
       padding: 20px;
       font-size: 2rem;
       &:hover {
-        color: black;
+        color: gold;
         cursor: pointer;
       }
+    }
+
+    .favorite {
+      color: gold;
     }
   }
 

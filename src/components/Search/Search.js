@@ -11,7 +11,8 @@ export class Search extends Component {
     super(props);
     this.state = {
       city: "",
-      path: {} || ""
+      path: {} || "",
+      favorite: false
     };
   }
 
@@ -38,6 +39,7 @@ export class Search extends Component {
   };
 
   toggleFavorite = id => {
+    this.setState({favorite: true})
     this.props.toggleFavorite(id);
   };
 
@@ -74,6 +76,7 @@ export class Search extends Component {
           path={this.state.path}
           redirect={this.returnToHomePage}
           toggleFavorite={this.toggleFavorite}
+          favorite={this.state.favorite}
         />
       );
     }
@@ -83,7 +86,8 @@ export class Search extends Component {
 Search.propTypes = {
   toggleFavorite: PropTypes.func,
   city: PropTypes.string,
-  path: PropTypes.object || PropTypes.string
+  path: PropTypes.object || PropTypes.string,
+  favorite: PropTypes.bool
 }
 
 export const mapDispatchToProps = dispatch => ({
