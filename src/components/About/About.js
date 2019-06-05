@@ -17,7 +17,7 @@ const About = () => {
           <br />
           who are looking for their next city to bike, but also for people
           <br />
-          traveling to a new state or city that want to see their available
+          traveling to a new city that want to see their available
           <br />
           biking options.
         </p>
