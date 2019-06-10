@@ -24,6 +24,10 @@ header {
     justify-content: space-around;
   }
 
+  .mobile-nav {
+    display: none;
+  }
+
   .favorite-link,
   .about-link {
     margin: 20px 20px;
@@ -59,4 +63,223 @@ header {
 h3 {
   padding-top: 300px;
   color: black;
+}
+
+@media (max-width: 750px) {
+  header {
+    display: block;
+    
+    h1 {
+      font-size: 2rem;
+      margin: 0 auto;
+      padding-right: 50px;
+    }
+
+   nav {
+      display: none;
+    }
+
+    .mobile-nav {
+      display: inline-block;
+    }
+   
+   #menuToggle {
+      display: block;
+      position: relative;
+      right: 305px;
+      bottom: 25px;
+      z-index: 1;
+      -webkit-user-select: none;
+      user-select: none;
+      cursor: pointer;
+    }
+    
+    #menuToggle input {
+      display: block;
+      width: 40px;
+      height: 32px;
+      position: absolute;
+      top: -7px;
+      left: -5px;
+      cursor: pointer;
+      opacity: 0;
+      z-index: 2;
+      -webkit-touch-callout: none;
+    }
+    
+    #menuToggle span {
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
+      background: #cdcdcd;
+      border-radius: 3px;
+      z-index: 1;
+      transform-origin: 4px 0px;
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    }
+    
+    #menuToggle span:first-child {
+      transform-origin: 0% 0%;
+    }
+    
+    #menuToggle span:nth-last-child(2) {
+      transform-origin: 0% 100%;
+    }
+    
+    #menuToggle input:checked ~ span {
+      opacity: 1;
+      transform: rotate(45deg) translate(-2px, -1px);
+      background: white;
+    }
+    
+    #menuToggle input:checked ~ span:nth-last-child(3) {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    
+    #menuToggle input:checked ~ span:nth-last-child(2) {
+      transform: rotate(-45deg) translate(0, -1px);
+    }
+    
+    #menu {
+      position: absolute;
+      height: 80px;
+      width: 125px;
+      margin: -100px 0 0 -50px;
+      padding: 110px 50px 50px 50px;
+      border-bottom-right-radius: 20px;
+      background: #30c3fa;
+      list-style-type: none;
+      -webkit-font-smoothing: antialiased;
+      transform-origin: 0% 0%;
+      transform: translate(-100%, 0);
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    }
+    
+    #menu li {
+      padding: 20px 0;
+      font-size: 30px;
+      margin-right: 25px;
+    }
+    
+    #menuToggle input:checked ~ ul {
+      transform: none;
+    }
+
+    .favorite-link,
+    .about-link {
+      margin: 20px auto;
+      font-size: 2rem;
+      text-decoration: none;
+      color: white;
+      &:hover {
+        color: black;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  header {
+    display: inline-block;
+
+    .mobile-nav {
+      display: inline-block;
+    }
+   
+   #menuToggle {
+      display: block;
+      position: relative;
+      right: 285px;
+      bottom: 25px;
+      z-index: 1;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  header {
+    display: inline-block;
+
+    .mobile-nav {
+      display: inline-block;
+    }
+   
+   #menuToggle {
+      display: block;
+      position: relative;
+      right: 255px;
+      bottom: 25px;
+      z-index: 1;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+  }
+}
+
+@media (max-width: 560px) {
+  header {
+    display: inline-block;
+
+    .mobile-nav {
+      display: inline-block;
+    }
+   
+   #menuToggle {
+      display: block;
+      position: relative;
+      right: 215px;
+      bottom: 25px;
+      z-index: 1;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+  }
+}
+
+
+@media (max-width: 460px) {
+  header {
+    display: inline-block;
+
+    .mobile-nav {
+      display: inline-block;
+    }
+   
+   #menuToggle {
+      display: block;
+      position: relative;
+      right: 165px;
+      bottom: 25px;
+      z-index: 1;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+  }
+}
+
+@media (max-width: 385px) {
+  header {
+    display: inline-block;
+
+    .mobile-nav {
+      display: inline-block;
+    }
+   
+   #menuToggle {
+      display: block;
+      position: relative;
+      right: 130px;
+      bottom: 25px;
+      z-index: 1;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+  }
 }

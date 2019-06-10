@@ -58,6 +58,23 @@ export class Home extends Component {
                 About
               </Link>
             </nav>
+            <nav className="mobile-nav" role='navigation'>
+              <div id='menuToggle'> 
+                <input type="checkbox" />
+                  <span></span>
+                  <span></span>
+                  <span></span>   
+                <ul id='menu'>
+                    <Link className="favorite-link" to="/Favorites">
+                      Favorites
+                    </Link>
+                    <br/>
+                    <Link className="about-link" to="/About">
+                        About
+                    </Link>
+                  </ul>
+                </div>
+              </nav>
           </header>
           <Search bikePaths={bikePaths} />
         </div>
