@@ -23,7 +23,7 @@ describe("Home", () => {
   ];
 
   beforeEach(() => {
-    wrapper = shallow(<Home />);
+    wrapper = shallow(<Home bikePaths ={mockBikePaths} />);
   });
 
   it("should match the snapshot", () => {

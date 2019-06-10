@@ -62,3 +62,18 @@ p {
   padding: 0;
   font-size: 1.3rem;
 }
+
+
+@media (max-width: 750px) {
+  .search-box {
+    width: 300px;
+
+    .search-text {
+      width: 240px;
+    }
+  }
+
+  
+}
+
+  
