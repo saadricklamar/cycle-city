@@ -92,6 +92,7 @@ h3 {
       -webkit-user-select: none;
       user-select: none;
       cursor: pointer;
+      
     }
     
     #menuToggle input {
@@ -185,60 +186,30 @@ h3 {
 
 @media (max-width: 680px) {
   header {
-    display: inline-block;
 
-    .mobile-nav {
-      display: inline-block;
-    }
-   
    #menuToggle {
-      display: block;
-      position: relative;
       right: 285px;
       bottom: 25px;
-      z-index: 1;
-      -webkit-user-select: none;
-      user-select: none;
     }
   }
 }
 
 @media (max-width: 620px) {
   header {
-    display: inline-block;
-
-    .mobile-nav {
-      display: inline-block;
-    }
    
    #menuToggle {
-      display: block;
-      position: relative;
       right: 255px;
       bottom: 25px;
-      z-index: 1;
-      -webkit-user-select: none;
-      user-select: none;
     }
   }
 }
 
 @media (max-width: 560px) {
   header {
-    display: inline-block;
 
-    .mobile-nav {
-      display: inline-block;
-    }
-   
    #menuToggle {
-      display: block;
-      position: relative;
       right: 215px;
       bottom: 25px;
-      z-index: 1;
-      -webkit-user-select: none;
-      user-select: none;
     }
   }
 }
@@ -246,40 +217,20 @@ h3 {
 
 @media (max-width: 460px) {
   header {
-    display: inline-block;
-
-    .mobile-nav {
-      display: inline-block;
-    }
    
    #menuToggle {
-      display: block;
-      position: relative;
       right: 165px;
       bottom: 25px;
-      z-index: 1;
-      -webkit-user-select: none;
-      user-select: none;
     }
   }
 }
 
 @media (max-width: 385px) {
   header {
-    display: inline-block;
-
-    .mobile-nav {
-      display: inline-block;
-    }
    
    #menuToggle {
-      display: block;
-      position: relative;
       right: 130px;
       bottom: 25px;
-      z-index: 1;
-      -webkit-user-select: none;
-      user-select: none;
     }
   }
 }
