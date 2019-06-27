@@ -44,7 +44,7 @@ export class Home extends Component {
       );
     }
     if (isLoading && !bikePaths.length) {
-      return <div className="loader" />;
+      return <div className="loader"/>;
     } else {
       return (
         <div className="home">
