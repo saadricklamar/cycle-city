@@ -6,6 +6,9 @@ const About = () => {
   return (
     <div className="about">
       <header>
+      <button className="go-home">
+          <i className="fas fa-arrow-circle-left" />
+        </button>
         <h1 className="about-header">About Cycle-City</h1>
         <Link className="return-home" to="/">
           Return Home

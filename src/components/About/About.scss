@@ -7,6 +7,10 @@
   background-size: cover;
   height: 100vh;
 
+  .go-home {
+    display: none;
+  }
+
   .about-header,
   .return-home {
     color: #30c3fa;
@@ -38,6 +42,35 @@
     color: #30c3fa;
     &:hover {
       color: white;
+    }
+  }
+}
+
+@media (max-width: 770px) {
+  .about {
+    
+    .about-header {
+      font-size: 2.5rem;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .return-home {
+      display: none;
+    }
+
+    .go-home {
+      display: block;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      
+      .fa-arrow-circle-left {
+        color: black;
+        &:hover {
+          color: #30c3fa;
+        }
+      }
     }
   }
 }
