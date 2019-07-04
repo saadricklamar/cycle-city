@@ -46,7 +46,7 @@
   }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 850px) {
   .about {
     
     .about-header {
@@ -73,4 +73,18 @@
       }
     }
   }
+}
+
+@media (max-width: 400px) {
+  .about {
+
+    .about-header {
+      font-size: 1.5rem;
+    }
+
+    .go-home {
+      font-size: 30px;
+    }
+  }
+
 }
