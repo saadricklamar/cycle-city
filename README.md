@@ -20,9 +20,10 @@ Traveling to a new city, but not sure if it's bike accessible? Cycle-City has bi
 
 Coming soon...
 
-## Screenshots
+## Demo
 
-<img width="1243" alt="Cycle City" src="https://user-images.githubusercontent.com/42000931/58755192-a4ba9780-849b-11e9-9534-eeeccaf8ba25.png">
+![2019-07-04 15 32 03](https://user-images.githubusercontent.com/42000931/60688210-01311e00-9e71-11e9-819f-9ff94385eb84.gif)
+
 
 ## Wireframe
 
@@ -32,11 +33,7 @@ Coming soon...
 
 ## Tech Stack
 
-* Leaflet
-* React
-* Redux
-* Jest/Enzyme
-* Sass
+Leaflet, React, Redux, Jest/Enzyme, Scss
 
 ## Contributors
 
