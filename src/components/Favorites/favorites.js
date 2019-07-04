@@ -21,7 +21,10 @@ export class Favorites extends Component {
     return (
       <div className="favorites-container">
         <header>
-          <h1 className="favorites">Favorites</h1>
+          <Link className="go-home-mobile" to="/">
+            <i className="fas fa-arrow-circle-left" />
+          </Link>
+          <h1 className="favorites-header">Favorites</h1>
           <Link className="return-home" to="/">
             Return Home
           </Link>

@@ -35,6 +35,7 @@
 
   p {
     font-size: 2rem;
+    width: 70%;
   }
 
   a {
@@ -46,13 +47,20 @@
   }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 850px) {
   .about {
     
     .about-header {
       font-size: 2.5rem;
       margin: 0 auto;
       padding: 20px;
+    }
+    .about-main {
+      margin-top: 25px;
+    }
+  
+    p {
+      font-size: 1.5rem;
     }
 
     .return-home {
@@ -73,4 +81,21 @@
       }
     }
   }
+}
+
+@media (max-width: 400px) {
+  .about {
+
+    .about-header {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+
+    .go-home {
+      font-size: 30px;
+    }
+  }
+
 }
