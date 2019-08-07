@@ -2,7 +2,7 @@ import React from "react";
 import Home from "../../containers/Home/Home";
 import { Route, Switch, Redirect } from "react-router-dom";
 import About from "../About/About";
-import Favorites from "../Favorites/Favorites";
+import Favorites from "../Favorites/favorites";
 import Maps from "../Maps/Maps";
 import "./App.scss";
 
