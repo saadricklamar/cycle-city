@@ -20,7 +20,7 @@ export class Home extends Component {
       return;
     } else {
       try {
-        const response = await fetch("http://api.citybik.es/v2/networks");
+        const response = await fetch("https://api.citybik.es/v2/networks");
         if (response.ok) {
           const bikePaths = await response.json();
           const cleanData = cleanBikePaths(bikePaths);
