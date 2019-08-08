@@ -2,6 +2,9 @@
 
 Traveling to a new city, but not sure if it's bike accessible? Cycle-City has biking information on over 60 cities and provides users with a map of the city's bike program. If you're traveling to a new city, then hop on Cycle-City and find your next biking adventure! 
 
+## Live Website
+
+https://cycle-city.herokuapp.com/
 
 ## Project Goals
 
@@ -16,9 +19,7 @@ Traveling to a new city, but not sure if it's bike accessible? Cycle-City has bi
 * `npm install`
 * `npm start`
 
-## Live Website
 
-Coming soon...
 
 ## Demo
 
