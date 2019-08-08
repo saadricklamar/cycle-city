@@ -42,13 +42,23 @@ header {
 }
 
 .loader {
-  margin: 400px auto;
+  margin: 0 auto;
   border: 16px solid #f3f3f3;
   border-top: 16px solid #3498db;
   border-radius: 50%;
   width: 120px;
   height: 120px;
   animation: spin 2s linear infinite;
+}
+
+.background-loading-image {
+  padding-top: 400px;
+  background: url(../../images/home-page.jpeg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 120vh;
 }
 
 @keyframes spin {
