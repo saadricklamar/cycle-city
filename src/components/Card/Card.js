@@ -1,5 +1,4 @@
 import React from "react";
-import "./Card.scss";
 import { PropTypes } from "prop-types";
 
 const Card = ({ name, location }) => {

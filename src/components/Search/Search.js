@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import "./Search.scss";
 import Maps from "../Maps/Maps";
 import { Redirect } from "react-router-dom";
 import { toggleFavorite } from "../../actions";

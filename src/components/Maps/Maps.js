@@ -1,5 +1,4 @@
 import React from "react";
-import "./Maps.scss";
 import { Link } from "react-router-dom";
 import { Map, TileLayer, Marker, Popup } from "react-leaflet";
 import { PropTypes } from "prop-types";

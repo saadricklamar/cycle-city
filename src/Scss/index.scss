@@ -1,12 +1,23 @@
-@import 'Variables';
-@import 'normalize';
-@import '../components/About/About.scss';
-@import '../components/App/App.scss';
-@import '../components/Card/Card.scss';
-@import '../components/Favorites/Favorites.scss';
-@import '../components/Maps/Maps.scss';
-@import '../components/Search/Search.scss';
-@import '../containers/Home/Home.scss';
+@import url("./variables.scss");
+@import url("./normalize.scss");
+@import url("../components/About/About.scss");
+@import url("../components/App/App.scss");
+@import url("../components/Card/Card.scss");
+@import url("../components/Favorites/Favorites.scss");
+@import url("../components/Maps/Maps.scss");
+@import url("../components/Search/Search.scss");
+@import url("../containers/Home/Home.scss");
 
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
