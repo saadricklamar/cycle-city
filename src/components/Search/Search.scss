@@ -1,9 +1,11 @@
+@import "../../Scss/variables.scss";
+
 .search-box {
   position: absolute;
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background: #30c3fa;
+  background: $primary-light-blue;
   height: 40px;
   border-radius: 40px;
   padding: 10px;
@@ -24,7 +26,7 @@
     border-radius: 50%;
     border: none;
     background: #4e6067;
-    background: #30c3fa;
+    background: $primary-light-blue;
     display: flex;
     justify-content: center;
     align-items: center;

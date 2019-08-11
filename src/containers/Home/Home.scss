@@ -1,3 +1,5 @@
+@import "../../Scss/variables.scss";
+
 .home {
   text-align: center;
   background: url(../../images/home-page.jpeg) no-repeat center center fixed;
@@ -44,7 +46,7 @@ header {
 .loader {
   margin: 0 auto;
   border: 16px solid #f3f3f3;
-  border-top: 16px solid #3498db;
+  border-top: 16px solid $primary-light-blue;
   border-radius: 50%;
   width: 120px;
   height: 120px;

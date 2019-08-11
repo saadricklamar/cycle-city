@@ -1,9 +1,11 @@
+@import "../../Scss/variables.scss";
+
 .leaflet-container {
   height: 500px;
   width: 600px;
   display: flex;
   justify-content: center;
-  border: 1px solid #30c3fa;
+  border: 1px solid $primary-light-blue;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   margin-bottom: 50px;
@@ -34,7 +36,7 @@
   .map-header {
     height: 70px;
     width: 602px;
-    background-color: #30c3fa;
+    background-color: $primary-light-blue;
     margin-top: 100px;
     display: flex;
     justify-content: flex-start;
@@ -72,7 +74,7 @@
     h6 {
       margin: 0 auto;
       padding: 0 auto;
-      color: #30c3fa;
+      color: $primary-light-blue;
       font-size: 1.5rem;
     }
 
@@ -84,7 +86,7 @@
     .website {
       color: black;
       &:hover {
-        color: #30c3fa;
+        color: $primary-light-blue;
       }
     }
   }

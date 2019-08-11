@@ -1,3 +1,5 @@
+@import "../../Scss/variables.scss";
+
 .favorites-container {
   text-align: center;
   background: url(../../images/about-page.jpeg) no-repeat center center fixed;
@@ -16,8 +18,10 @@
     font-size: 2rem;
     text-decoration: none;
     color: black;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
     &:hover {
-      color: #30c3fa;
+      color: $primary-light-blue;
       cursor: pointer;
     }
   }
@@ -29,7 +33,7 @@
   }
 
   .favorites-header {
-    color: #30c3fa;
+    color: $primary-light-blue;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
   }
@@ -65,7 +69,7 @@
       .fa-arrow-circle-left {
         color: black;
         &:hover {
-          color: #30c3fa;
+          color: $primary-light-blue;
         }
       }
     }

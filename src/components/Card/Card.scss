@@ -1,8 +1,10 @@
+@import "../../Scss/variables.scss";
+
 .favorite-bike-path {
   height: 300px;
   width: 300px;
   color: white;
-  background: #30c3fa;
+  background: $primary-light-blue;
   border-radius: 20px;
   text-align: left;
   margin: 20px;
