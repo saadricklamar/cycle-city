@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "./Favorites.scss";
 import { connect } from "react-redux";
 import Card from "../Card/Card";
 import { PropTypes } from "prop-types";

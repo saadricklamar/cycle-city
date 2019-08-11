@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import Search from "../../components/Search/Search";
-import "./Home.scss";
 import { Link } from "react-router-dom";
 import { connect } from "react-redux";
 import { addBikePaths, hasErrored, isLoading } from "../../actions";
