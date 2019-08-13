@@ -34,7 +34,12 @@ https://cycle-city.herokuapp.com/
 
 ## Tech Stack
 
-Leaflet, React, Redux, Jest/Enzyme, Scss
+* Leaflet
+* JavaScript
+* React
+* Redux
+* SASS
+* Jest/Enzyme
 
 ## Contributors
 
