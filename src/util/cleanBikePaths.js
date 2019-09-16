@@ -15,27 +15,3 @@ export const cleanBikePaths = bikePaths => {
     };
   });
 };
-
-// const websiteArray = [
-//   'https://healthyridepgh.com/',
-//   'https://www.jerseybikeshare.com/',
-//   'https://www.jerseybikeshare.com/',
-//   'https://skybikewpb.com/',
-//   'https://www.kent.edu/recservices/flashfleet',
-//   'https://www.jerseybikeshare.com/',
-//   'https://www.jerseybikeshare.com/',
-//   'https://www.jerseybikeshare.com/',
-//   'https://www.jerseybikeshare.com/',
-//   'https://www.jerseybikeshare.com/',
-//   'https://www.we-cycle.org/',
-//   'https://citibikemiami.com/',
-//   'http://www.decobike.com/',
-//   'https://battlecreek.bcycle.com/',
-//   'https://desmoines.bcycle.com/',
-//   'https://greenville.bcycle.com/',
-//   'https://nashville.bcycle.com/',
-//   'https://columbiacounty.bcycle.com/',
-//   'https://rapidcity.bcycle.com/',
-//   'https://bikewalksavannah.org/',
-//   'none'
-// ]
