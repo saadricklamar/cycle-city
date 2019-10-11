@@ -29,6 +29,12 @@ describe("Home", () => {
   it("should match the snapshot", () => {
     expect(wrapper).toMatchSnapshot();
   });
+  it("renders component with associated path when About is clicked", () => {
+    expect(wrapper.find("Link.about-link").prop("to")).toEqual("/About");
+  });
+  it("renders component with associated path when Favorites is clicked", () => {
+    expect(wrapper.find("Link.favorite-link").prop("to")).toEqual("/Favorites");
+  });
   describe("componentDidMount", () => {
     it("should fetch data using correct params", () => {
       window.fetch = jest.fn().mockImplementation(() =>

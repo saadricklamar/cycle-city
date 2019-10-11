@@ -66,11 +66,11 @@ export class Home extends Component {
                   <span></span>
                   <span></span>   
                 <ul id='menu'>
-                    <Link className="favorite-link" to="/Favorites">
+                    <Link className="favorite-mobile-link" to="/Favorites">
                       Favorites
                     </Link>
                     <br/>
-                    <Link className="about-link" to="/About">
+                    <Link className="about-mobile-link" to="/About">
                         About
                     </Link>
                   </ul>
