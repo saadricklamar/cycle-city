@@ -35,6 +35,12 @@ describe("Home", () => {
   it("renders component with associated path when Favorites is clicked", () => {
     expect(wrapper.find("Link.favorite-link").prop("to")).toEqual("/Favorites");
   });
+  it("renders component with associated path when mobile About link is clicked", () => {
+    expect(wrapper.find("Link.about-mobile-link").prop("to")).toEqual("/About");
+  });
+  it("renders component with associated path when mobile Favorites link is clicked", () => {
+    expect(wrapper.find("Link.favorite-mobile-link").prop("to")).toEqual("/Favorites");
+  });
   describe("componentDidMount", () => {
     it("should fetch data using correct params", () => {
       window.fetch = jest.fn().mockImplementation(() =>
