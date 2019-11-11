@@ -1,8 +1,8 @@
 @import "../../Scss/variables.scss";
 
 .leaflet-container {
-  height: 500px;
-  width: 600px;
+  height: 400px;
+  width: 500px;
   display: flex;
   justify-content: center;
   border: 1px solid $primary-light-blue;
@@ -35,9 +35,9 @@
 
   .map-header {
     height: 70px;
-    width: 602px;
+    width: 502px;
     background-color: $primary-light-blue;
-    margin-top: 100px;
+    margin-top: 70px;
     display: flex;
     justify-content: flex-start;
     border-top-left-radius: 20px;
@@ -45,14 +45,18 @@
 
     h2 {
       text-align: left;
-      font-size: 2.5rem;
-      margin: 10px auto;
+      font-size: 2rem;
+      margin: 0;
       color: white;
+      padding-left: 10px;
+      padding-top: 10px;
+      width: 250px;
     }
 
     .fa-star {
       color: white;
-      margin: 0 0 0 200px;
+      position: relative;
+      left: 180px;
       padding: 20px;
       font-size: 2rem;
       &:hover {
