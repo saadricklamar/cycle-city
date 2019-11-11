@@ -6,11 +6,15 @@ Traveling to a new city, but not sure if it's bike accessible? Cycle-City has bi
 
 https://cycle-city.herokuapp.com/
 
-## Project Goals
+## Tech Stack
 
-* Implement Leaflet, a Javascript library for interactive maps
-* Implement React, Redux, and Router
-* Write meaningful, comprehensive unit and integration tests for everything
+* [Leaflet](https://leafletjs.com/)
+* [JavaScript](https://www.javascript.com/)
+* [React](https://reactjs.org/)
+* [Redux](https://redux.js.org/)
+* [SASS](https://sass-lang.com/)
+* [Jest](https://jestjs.io/)
+* [Enzyme](https://airbnb.io/enzyme/)
 
 ## Installation and Setup Instructions
 
@@ -31,15 +35,6 @@ https://cycle-city.herokuapp.com/
 <img width="810" alt="WireFrameHomeCycleCity" src="https://user-images.githubusercontent.com/42000931/58891064-16b3fc00-86a9-11e9-9888-994bcf98e7d3.png">
 
 <img width="802" alt="MapsCycleCity" src="https://user-images.githubusercontent.com/42000931/58891070-19165600-86a9-11e9-90b3-ebab18f4efe2.png">
-
-## Tech Stack
-
-* Leaflet
-* JavaScript
-* React
-* Redux
-* SASS
-* Jest/Enzyme
 
 ## Contributors
 
